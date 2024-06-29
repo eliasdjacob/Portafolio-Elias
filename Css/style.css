@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+}
+
+:root {
+  --body-bg-color: rgb(43, 43, 70);
+  --text-color: white;
+  --colorh1-color: rgb(215, 211, 211);
+  --fondo-proyectos: rgb(60, 43, 70); /* flexbox */
+}
+
+/*Applying variable created in root to our web body */
+/*Replaced the body with css variables */
+body {
+  display: flex;
+  flex-direction: column;
+  background: var(--body-bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+h1,
+h2 {
+  color: var(--colorh1-color);
+}
+
+.titulo {
+  display: flex;
+  margin: 3rem;
+}
+
+/* navigation bar */
+.navigation {
+  display: flex; /* Uses flexbox to organize child elements (navigation items) in a flexible line. */
+  gap: 3rem; /* Establishes a 3 rem space between each child element inside the flex container. */
+  list-style: none; /* Deletes the predetermined list elements' from the list points */
+  justify-content: flex-end; /* Aligns the child elements to the end of the flex container, to the right */
+  margin: 0 3rem; /* Establishes a 0 margin on the upper and lower end, and 3 rem on both sides */
+}
+
+/* links to navigation bar styles */
+.navigation li {
+  font-size: 1rem;
+  width: 100px;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  background: #f0eaea1a;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+/* navigation bar links style */
+a {
+  text-decoration: none; /* Deletes the default underlining on links. */
+  color: rgb(215, 211, 211); /* Establishes the link text color. */
+}
+
+/* everything the Main contains */
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grouped media queries */
+
+/* Phone (small screens, up to 767px) */
+@media (max-width: 767px) {
+  .titulo {
+    justify-content: center;
+  }
+  .navigation {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+/* Tablets (medium size screens, between 768px and 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .titulo {
+    justify-content: center;
+  }
+  .navigation {
+    gap: 2rem;
+    justify-content: center;
+  }
+}
+
+/* Desktop (wide screens, 1024px and above) */
+@media (min-width: 1024px) {
+  .titulo {
+    justify-content: flex-start;
+  }
+  .navigation {
+    gap: 3rem;
+    justify-content: flex-end;
+    margin: 0 3rem;
+  }
+}
+
+.sparkle {
+  position: fixed;
+  z-index: 6;
+  opacity: 0.5;
+  pointer-events: none;
+}

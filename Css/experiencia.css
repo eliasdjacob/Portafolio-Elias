@@ -1,0 +1,55 @@
+.experiencia {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  color: azure;
+}
+
+.container-experiencia {
+  width: 100%; /* width */
+  padding: 2rem;
+  margin-top: 5rem;
+  line-height: 2.5rem; /* spacing between text paragraphs */
+  font-size: large;
+  margin: 8rem;
+}
+
+/* Phone (small screens, up to 767px) */
+@media (max-width: 767px) {
+  .container-experiencia {
+    width: 100%;
+    margin: 0rem;
+  }
+  .experiencia {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    font-size: small;
+  }
+}
+
+/* tablets (medium size screens, between 768px and 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .experiencia {
+    width: 75%;
+  }
+  .container-experiencia-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+  }
+}
+
+/* Desktop (wide screens, 1024px and above) */
+@media (min-width: 1024px) {
+  .experiencia {
+    width: 75%;
+  }
+  .container-experiencia-section {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+  }
+}

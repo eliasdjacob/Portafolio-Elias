@@ -1,0 +1,20 @@
+.proyectos .container-proyectos {
+  width: 50%;
+  justify-content: center;
+  margin: 0 auto;
+
+  & .galeria-proyectos {
+    width: 80%;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  & .galeria-proyectos > .proyecto {
+    justify-content: space-between;
+    & > img {
+      width: 140px;
+      height: 200px;
+    }
+  }
+}
