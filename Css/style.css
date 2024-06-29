@@ -17,7 +17,6 @@ body {
   background: var(--body-bg-color);
   color: var(--text-color);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 h1,
@@ -30,21 +29,27 @@ h2 {
   margin: 3rem;
 }
 
+header {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(206, 204, 204, 0.301);
+  backdrop-filter: blur(5px);
+}
+
 /* navigation bar */
 .navigation {
   display: flex; /* Uses flexbox to organize child elements (navigation items) in a flexible line. */
   gap: 3rem; /* Establishes a 3 rem space between each child element inside the flex container. */
   list-style: none; /* Deletes the predetermined list elements' from the list points */
   justify-content: flex-end; /* Aligns the child elements to the end of the flex container, to the right */
-  margin: 0 3rem; /* Establishes a 0 margin on the upper and lower end, and 3 rem on both sides */
 }
 
 /* links to navigation bar styles */
 .navigation li {
+  margin-top: 14px;
   font-size: 1rem;
   width: 100px;
   text-align: center;
-  padding: 0.5rem;
   border-radius: 0.5rem;
   background: #f0eaea1a;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
@@ -56,10 +61,28 @@ a {
   color: rgb(215, 211, 211); /* Establishes the link text color. */
 }
 
-/* everything the Main contains */
-.main-container {
-  display: flex;
-  flex-direction: column;
+
+.contacto {
+  margin: 60px auto;
+
+  & h2 {
+    text-align: center;
+  }
+}
+
+.formulario-contacto {
+  display: grid;
+  justify-content: center;
+  margin: 40px auto;
+
+  & iframe {
+    background-color: #f0f0f0;
+    width: 600px;
+    height: 800px;
+    padding: 20px;
+    border: 1px solid #303058;
+    border-radius: 8px;
+  }
 }
 
 /* Grouped media queries */

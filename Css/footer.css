@@ -23,7 +23,7 @@ footer {
   gap: 15px;
 }
 
-.footer-social a {
+.footer-social a svg {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -43,8 +43,6 @@ footer {
   height: 24px;
   fill: #fff;
 }
-
-
 
 @media (max-width: 768px) {
   .footer-container {

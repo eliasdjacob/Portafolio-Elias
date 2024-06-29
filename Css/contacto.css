@@ -6,12 +6,20 @@
   width: fit-content;
 }
 
+.formulario-contacto {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+  & iframe {
+    border: none;
+    width: 85vw;
+    height: 20rem;
+    
+  }
+  
+}
 .contacto h2 {
   margin-bottom: 20px;
 }
 
-iframe {
-  border: none;
-  width: 85vw;
-  height: 20rem;
-}

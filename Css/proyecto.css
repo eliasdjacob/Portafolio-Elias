@@ -1,20 +1,40 @@
-.proyectos .container-proyectos {
-  width: 50%;
-  justify-content: center;
-  margin: 0 auto;
+#h2-proyectos {
+  text-align: center;
+  margin-block: 40px;
+}
 
+.proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  
   & .galeria-proyectos {
-    width: 80%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
     gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  }
 
-  & .galeria-proyectos > .proyecto {
-    justify-content: space-between;
-    & > img {
-      width: 140px;
-      height: 200px;
+    & img {
+      border-radius: 8px;
+    }
+
+    & .proyecto {
+      padding: 10px;
+      background-color: #f0f0f0;
+      color: #333;
+      text-align: center;
+      border: 1px solid #333;
+      border-radius: 8px;
+      line-height: 1.5;
+
+      & a {
+        color: #333;
+      }
     }
   }
+}
+
+.proyectos img {
+  width: 145px;
+  height: 200px;
 }

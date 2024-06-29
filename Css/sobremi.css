@@ -1,20 +1,32 @@
-.sobremi {
-  display: flex;
-  justify-content: center; /* This centers the element */
-}
 .container-sobremi {
-  display: flex;
+  justify-content: center;
+  margin: 30px auto;
   width: 50%; /* width */
   padding: 2rem;
-  margin-top: 5rem;
-  line-height: 2.5rem; /* spacing between text paragraphs */
-  font-size: large;
-  color: azure;
-  gap: 5rem;
-  align-items: center;
+  border: 1px solid #303030;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  color: #333;
 }
-.img-perfil {
-  border-radius: 50%;
+
+.header-sobremi {
+  display: inline-flex;
+  margin: auto;
+  justify-content: center;
+
+  & h4 {
+    font-size: 36px;
+    margin-block: 70px;
+    margin-left: 20px;
+  }
+
+  & img {
+    border-radius: 50%;
+  }
+}
+
+.footer-header {
+  margin: 30px;
 }
 
 /* Phone (small screens, up to 767px) */
